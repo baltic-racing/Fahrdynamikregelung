@@ -4,7 +4,7 @@ close all;
 
 % Geschwindigkeit
 %--------------------------------------------------------------------------
-v_x = 15;                   % [m/s] Längsgeschwindigkeit
+v_x = 5;                   % [m/s] Längsgeschwindigkeit
 
 % Massen
 %--------------------------------------------------------------------------
@@ -13,7 +13,7 @@ J_fzg_z = 300;              % [kg*m^2] Massenträgheitsmoment um Z-Achse
 
 % Schwerpunkt und geometrische Abmaße
 %--------------------------------------------------------------------------
-%l_fzg = 1300/1000;               % [mm] Radstand Fahrzeug
+l_fzg = 1530/1000;               % [mm] Radstand Fahrzeug
 l_V_fzg = 1023/1000;              % [mm] Schwerpunktvorlage
 l_H_fzg = 507/1000;              % [mm] Schwerpunktrücklage
 
