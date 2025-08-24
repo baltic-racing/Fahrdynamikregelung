@@ -2,6 +2,8 @@ clc;
 clear all;
 close all;
 
+Ts = 1/10000;
+
 % Geschwindigkeit
 %--------------------------------------------------------------------------
 v_x = 5;                   % [m/s] Längsgeschwindigkeit
@@ -29,6 +31,23 @@ delta_H = 0;                % [°] Spurwinkel Hinterrad
 %--------------------------------------------------------------------------
 c_alpha_V = 9300;          % [N/rad] Vorderreifenseitenachssteifigkeit
 c_alpha_H = 13400;         % [N/rad] Hinterreifenseitenachssteifigkeit
+
+
+K_G =1;
+T_G =0.3;
+G_G = tf (K_G,[T_G 1]);
+
+K_H =1;
+T_H =0.01;
+G_H = tf (K_H,[T_H 1]);
+
+K_PD = 5;
+T_v = 0.1;
+T_p = T_v/10; %parasitäre Verzögerung
+%G_C = tf (K_C * [T_V 1], 1);
+
+% Interaktives Reglerentwurfstool
+%sisotool(G_G, G_C, G_H, tf(1, 1));
 
 % Schwerpunkt und geometrische Abmaße
 %--------------------------------------------------------------------------
