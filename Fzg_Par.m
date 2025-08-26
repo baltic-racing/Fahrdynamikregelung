@@ -2,11 +2,13 @@ clc;
 clear all;
 close all;
 
+load("Testrunde_PATZE.mat");
+
 Ts = 1/10000;
 
 % Geschwindigkeit
 %--------------------------------------------------------------------------
-v_x = 5;                   % [m/s] Längsgeschwindigkeit
+v_x = 30/3.6;                   % [m/s] Längsgeschwindigkeit
 
 % Massen
 %--------------------------------------------------------------------------
@@ -21,9 +23,10 @@ l_H_fzg = 507/1000;              % [mm] Schwerpunktrücklage
 
 % Lenkung
 %--------------------------------------------------------------------------
+SAS = 82/100;
 delta_L = 5;               % [°] Einlenkwinkel Lenkrad
 i_L = 4.93;                 % [-] Lenkübersetzung
-delta_V = delta_L/i_L;      % [°] Spurwinkel Vorderrad
+delta_V = 36 * SAS;      % [°] Spurwinkel Vorderrad
 delta_S = delta_V;
 delta_H = 0;                % [°] Spurwinkel Hinterrad
 
@@ -31,7 +34,6 @@ delta_H = 0;                % [°] Spurwinkel Hinterrad
 %--------------------------------------------------------------------------
 c_alpha_V = 9300;          % [N/rad] Vorderreifenseitenachssteifigkeit
 c_alpha_H = 13400;         % [N/rad] Hinterreifenseitenachssteifigkeit
-
 
 K_G =1;
 T_G =0.3;
@@ -66,13 +68,13 @@ T_p = T_v/10; %parasitäre Verzögerung
 % Kp = 2;
 % Tn = 0.03;
 % 
-% %Einspurmodell Zustandsraum
-% ss_A = [-(c_alpha_V*l_V_fzg^2+c_alpha_H*l_H_fzg^2)/(J_fzg_z*v_x) (c_alpha_H*l_H_fzg-c_alpha_V*l_V_fzg)/J_fzg_z 
-%         (c_alpha_H*l_H_fzg-c_alpha_V*l_V_fzg-m_fzg*v_x^2)/(m_fzg*v_x^2) -(c_alpha_V+c_alpha_H)/(m_fzg*v_x)];
-% ss_B = [(c_alpha_V*l_V_fzg)/J_fzg_z -(c_alpha_H*l_H_fzg)/J_fzg_z
-%         c_alpha_V/(m_fzg*v_x) c_alpha_H/(m_fzg*v_x)];
-% ss_C = [1 0];
-% ss_D = [0 0];
+%Einspurmodell Zustandsraum
+ss_A = [-(c_alpha_V*l_V_fzg^2+c_alpha_H*l_H_fzg^2)/(J_fzg_z*v_x) (c_alpha_H*l_H_fzg-c_alpha_V*l_V_fzg)/J_fzg_z 
+        (c_alpha_H*l_H_fzg-c_alpha_V*l_V_fzg-m_fzg*v_x^2)/(m_fzg*v_x^2) -(c_alpha_V+c_alpha_H)/(m_fzg*v_x)];
+ss_B = [(c_alpha_V*l_V_fzg)/J_fzg_z -(c_alpha_H*l_H_fzg)/J_fzg_z
+        c_alpha_V/(m_fzg*v_x) c_alpha_H/(m_fzg*v_x)];
+ss_C = [1 0];
+ss_D = [0 0];
 % 
 % t_max = 10;
 % delta_t = 0.001;
