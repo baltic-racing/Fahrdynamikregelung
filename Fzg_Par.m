@@ -49,6 +49,8 @@ T_v = 0.1;
 T_p = T_v/10; %parasitäre Verzögerung
 %G_C = tf (K_C * [T_V 1], 1);
 
+
+
 % Interaktives Reglerentwurfstool
 %sisotool(G_G, G_C, G_H, tf(1, 1));
 
