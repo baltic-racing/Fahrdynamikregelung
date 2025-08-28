@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 
-load("Lap38Data.mat");
+load("Testrunde_PATZE.mat");
 
 Ts = 1/10000;
 
@@ -20,7 +20,7 @@ J_fzg_z = 300;              % [kg*m^2] Massenträgheitsmoment um Z-Achse
 l_fzg = 1530/1000;               % [mm] Radstand Fahrzeug
 l_V_fzg = 1023/1000;              % [mm] Schwerpunktvorlage
 l_H_fzg = 507/1000;              % [mm] Schwerpunktrücklage
-t_H_fzg = 1200/1000;                                                        % ======================
+t_H_fzg = 600/1000;                                                         
 
 % Lenkung
 %--------------------------------------------------------------------------
@@ -33,8 +33,10 @@ delta_H = 0;                % [°] Spurwinkel Hinterrad
 
 % Reifen
 %--------------------------------------------------------------------------
-c_alpha_V = 9300;          % [N/rad] Vorderreifenseitenachssteifigkeit
-c_alpha_H = 13400;         % [N/rad] Hinterreifenseitenachssteifigkeit
+% c_alpha_V = 9300;          % [N/rad] Vorderreifenseitenachssteifigkeit
+% c_alpha_H = 13400;         % [N/rad] Hinterreifenseitenachssteifigkeit
+c_alpha_V = 66000;          % [N/rad] Vorderreifenseitenachssteifigkeit
+c_alpha_H = 70000;         % [N/rad] Hinterreifenseitenachssteifigkeit
 
 K_G =1;
 T_G =0.3;
