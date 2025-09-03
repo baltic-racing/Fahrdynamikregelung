@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VariableDescriptionMetaData SchemaVersion="1">
+  <SerializedFileName>fahrdynamikregelung_ty25.vdp</SerializedFileName>
+  <IsActive>false</IsActive>
+  <FileName>fahrdynamikregelung_ty25.sdf</FileName>
+  <VariableDescriptionSourcePathAndFileName>..\fahrdynamikregelung_ty25.sdf</VariableDescriptionSourcePathAndFileName>
+  <ImportOptions>
+    <DisableLookupDetection>false</DisableLookupDetection>
+    <MeasurementArrayOmitThreshold>10000</MeasurementArrayOmitThreshold>
+    <ValueBlockOmitThreshold>10000</ValueBlockOmitThreshold>
+  </ImportOptions>
+</VariableDescriptionMetaData>

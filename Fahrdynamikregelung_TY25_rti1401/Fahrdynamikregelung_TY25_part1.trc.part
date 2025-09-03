@@ -1,0 +1,84 @@
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+	group "Constant" -- block-group
+	{
+	 block: "Constant"
+	}
+		p_0_Fahrdynamikregelung_TY25_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Fahrdynamikregelung_TY25_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant"
+
+  
+  
+	group "CAN_TYPE1_SETUP_M1_C1" -- subsystem-group
+
+
+	endgroup -- subsystem-group "CAN_TYPE1_SETUP_M1_C1"
+  
+  
+	group "MicroAutoBox II DS1513" -- subsystem-group
+
+
+
+
+
+	endgroup -- subsystem-group "MicroAutoBox II DS1513"
+  
+  
+	group "RTI Data" -- subsystem-group
+
+
+	endgroup -- subsystem-group "RTI Data"
+  
+  
+	group "VCU0" -- subsystem-group
+
+		p_0_Fahrdynamikregelung_TY25_real_T_0[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "APPS1"
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Fahrdynamikregelung_TY25_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "APPS2"
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Fahrdynamikregelung_TY25_real_T_0[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "RX status"
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Fahrdynamikregelung_TY25_real_T_0[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "RX time"
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Fahrdynamikregelung_TY25_real_T_0[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "RX delta time"
+		 flags:   OUTPUT|READONLY
+		}
+
+	endgroup -- subsystem-group "VCU0"
+
+
+
+endgroup -- "Model Root"

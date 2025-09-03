@@ -1,0 +1,167 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: SWC FB SH_F VCU DIC AIM_EVO_5 AutoBox_2 HV_Distribution Fusebox SH_B AMS
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ CELL_MAX_V : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 330 VCU12: 8 VCU
+ SG_ Max_DC_Current_INVL : 7|16@0- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+
+BO_ 339 VCU11: 8 VCU
+ SG_ Max_DC_Current_INVR : 7|16@0- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+
+BO_ 1872 SWC0: 8 SWC
+ SG_ Paddle_shifter_right : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Paddle_shifter_left : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Push_button_right : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Push_button_left : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Encoder_right : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Encoder_left : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1536 FB0: 8 FB
+ SG_ FRO : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Start_sig_FB : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SDCI_FB : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ V_LV : 16|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ V_NIMH : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+
+BO_ 1171 VCU10: 8 VCU
+
+BO_ 1139 VCU9: 8 VCU
+ SG_ FOC_algorithm_component_Iq_INVR : 39|32@0- (0.001,0) [-2147483.648|2147483.647] "A_pk" Vector__XXX
+ SG_ FOC_algorithm_component_Id_INVR : 7|32@0- (0.001,0) [-2147483.648|2147483.647] "A_pk" Vector__XXX
+
+BO_ 1107 VCU8: 8 VCU
+ SG_ Fault_code_INVR : 39|8@0+ (1,0) [0|255] "#" Vector__XXX
+ SG_ Motor_temp_INVR : 23|16@0- (0.1,0) [-3276.8|3276.7] "°C" Vector__XXX
+ SG_ Controller_tempINVR : 7|16@0- (0.1,0) [-3276.8|3276.7] "°C" Vector__XXX
+
+BO_ 1075 VCU7: 8 VCU
+ SG_ DC_current_INVR : 23|16@0- (0.1,0) [-3276.8|3276.7] "A_dc" Vector__XXX
+ SG_ AC_current_INVR : 7|16@0- (0.1,0) [-3276.8|3276.7] "A_pk" Vector__XXX
+
+BO_ 1043 VCU6: 8 VCU
+ SG_ Input_cycle_INVR : 55|16@0- (1,0) [-32768|32767] "V" Vector__XXX
+ SG_ Duty_cycle_INVR : 39|16@0- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ ERPM_R : 7|32@0- (1,0) [-2147483648|2147483647] "ERPM" Vector__XXX
+
+BO_ 1162 VCU5: 8 VCU
+
+BO_ 1130 VCU4: 8 VCU
+ SG_ FOC_algorithm_component_Iq_INVL : 39|32@0- (0.001,0) [-2147483.648|2147483.647] "A_pk" Vector__XXX
+ SG_ FOC_algorithm_component_Id_INVL : 7|32@0- (0.001,0) [-2147483.648|2147483.647] "A_pk" Vector__XXX
+
+BO_ 1098 VCU3: 8 VCU
+ SG_ Fault_code_INVL : 39|8@0+ (1,0) [0|255] "#" Vector__XXX
+ SG_ Motor_temp_INVL : 23|16@0- (0.1,0) [-3276.8|3276.7] "°C" Vector__XXX
+ SG_ Controller_temp_INVL : 7|16@0- (0.1,0) [-3276.8|3276.7] "°C" Vector__XXX
+
+BO_ 1066 VCU2: 8 VCU
+ SG_ DC_current_INVL : 23|16@0- (0.1,0) [-3276.8|3276.7] "A_dc" Vector__XXX
+ SG_ AC_current_INVL : 7|16@0- (0.1,0) [-3276.8|3276.7] "A_pk" Vector__XXX
+
+BO_ 1034 VCU1: 8 VCU
+ SG_ Input_voltage_INVL : 55|16@0- (1,0) [-32768|32767] "V" Vector__XXX
+ SG_ Duty_cycle_INVL : 39|16@0- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ ERPM_L : 7|32@0- (1,0) [-2147483648|2147483647] "ERPM" Vector__XXX
+
+BO_ 768 VCU0: 8 VCU
+ SG_ APPS2 : 16|16@1+ (0.1,0) [0|6553.5] "%" Vector__XXX
+ SG_ APPS1 : 0|16@1+ (0.1,0) [0|6553.5] "%" Vector__XXX
+
+BO_ 1026 SH_F2: 8 SH_F
+
+BO_ 1025 SH_F1: 8 SH_F
+ SG_ WSS_FR : 48|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ WSS_FL : 32|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ BPS_R : 16|16@1+ (0.1,0) [0|6553.5] "bar" Vector__XXX
+ SG_ BPS_F : 0|16@1+ (0.1,0) [0|65535] "bar" Vector__XXX
+
+BO_ 1024 SH_F0: 8 SH_F
+ SG_ SAS : 56|8@1- (1,0) [-128|127] "%" Vector__XXX
+ SG_ DTS_FR : 16|16@1+ (1,0) [0|65535] "mm" Vector__XXX
+ SG_ DTS_FL : 0|16@1+ (1,0) [0|65535] "mm" Vector__XXX
+
+BO_ 1042 SH_B2: 8 SH_B
+
+BO_ 1040 SH_B0: 8 SH_B
+ SG_ DTS_RR : 48|16@1+ (1,0) [0|65535] "mm" Vector__XXX
+ SG_ DTS_RL : 32|16@1+ (1,0) [0|65535] "mm" Vector__XXX
+ SG_ WSS_RR : 16|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ WSS_RL : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+
+BO_ 1041 SH_B1: 8 SH_B
+ SG_ CTS_LD : 48|16@1+ (0.1,0) [0|6553.5] "°C" Vector__XXX
+ SG_ CTS_LU : 32|16@1+ (0.1,0) [0|6553.5] "°C" Vector__XXX
+ SG_ CTS_RD : 16|16@1+ (0.1,0) [0|6553.5] "°C" Vector__XXX
+ SG_ CTS_RU : 0|16@1+ (0.1,0) [0|6553.5] "°C" Vector__XXX
+
+BO_ 1280 DIC0: 8 DIC
+ SG_ SDCI_DIC : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ R2D : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ TS_ON : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 528 AMS2: 8 AMS
+ SG_ CELL_MAX_T : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CELL_MIN_T : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CELL_MIN_V : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 513 AMS1: 8 AMS
+ SG_ T_CELL_MAX : 48|16@1+ (1,0) [0|65535] "m°C" Vector__XXX
+ SG_ T_CELL_MIN : 32|16@1+ (1,0) [0|65535] "m°C" Vector__XXX
+ SG_ V_CELL_MAX : 16|16@1+ (0.1,0) [0|6553.5] "mV" Vector__XXX
+ SG_ V_CELL_MIN : 0|16@1+ (0.1,0) [0|6553.5] "mV" Vector__XXX
+
+BO_ 512 AMS0: 8 AMS
+ SG_ AMS_ERR : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_ERR : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAN_OK : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PRECHARGE : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TS_RDY : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Current_drawn : 32|16@1+ (1,0) [0|65535] "As" Vector__XXX
+ SG_ I_TS : 16|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ V_TS : 0|16@1+ (0.01,0) [0|655.35] "V" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+
